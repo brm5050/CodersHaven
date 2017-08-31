@@ -1,0 +1,23 @@
+{
+  "name": "CodersHaven",
+  "version": "1.0.0",
+  "description": "A Forum for Coders to Learn, Engage, and Share",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brm5050/CodersHaven.git"
+  },
+  "keywords": [],
+  "author": "Anonymous Capybara 2.0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brm5050/CodersHaven/issues"
+  },
+  "homepage": "https://github.com/brm5050/CodersHaven#readme",
+  "dependencies": {
+    "webpack": "^3.5.5"
+  }
+}
