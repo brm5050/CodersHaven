@@ -1,15 +1,13 @@
 const webpack = require('webpack');
 const path = require('path');
+const fs = require('fs');
 
 module.exports = {
-    devtool: 'inline-source-map',
-    entry: [
-        'webpack-dev-server/client?http://127.0.0.1:8080/',
-        'webpack/hot/only-dev-server',
-        './client/index.js'
-    ],
+    entry: {
+        app: ['./index.js']
+    },
     output: {
-        path: path.join(__dirname, 'public'),
+        path: path.resolve('./public'),
         filename: 'bundle.js'
     },
     resolve: {
@@ -29,8 +27,5 @@ module.exports = {
         }
         ]
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin()
-    ]
+     target: 'node'
 };

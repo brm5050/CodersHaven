@@ -2,6 +2,7 @@
 "use strict";
 
 var express = require("express");
+var path = require('path');
 var MongoClient = require('mongodb').MongoClient,
 	assert = require('assert');
 var app = express();
