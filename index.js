@@ -8,7 +8,7 @@ var app = express();
 
 var url = 'mongodb://localhost:27017/codershavenTest';
 
-MongoClient.connect(url, fuction(err, db) {
+MongoClient.connect(url, function(err, db) {
 	assert.equal(null,err);
 	console.log("Connected correctly to server");
 });
