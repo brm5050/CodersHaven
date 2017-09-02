@@ -15,7 +15,7 @@ MongoClient.connect(url, function(err, db) {
 });
 
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 var port = 3000;
 
