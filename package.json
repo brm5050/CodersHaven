@@ -20,11 +20,13 @@
   },
   "homepage": "https://github.com/brm5050/CodersHaven#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "css-loader": "^0.28.7",
     "express": "^4.15.4",
     "material-ui": "^0.19.1",
     "mongodb": "^2.2.31",
+    "mongoose": "^4.11.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-tap-event-plugin": "^2.0.1",
