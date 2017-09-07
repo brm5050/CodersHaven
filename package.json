@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/brm5050/CodersHaven#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "css-loader": "^0.28.7",
     "express": "^4.15.4",

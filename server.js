@@ -18,6 +18,8 @@ app.use(express.static(__dirname + '/public'));
 
 var port = 3000;
 
+
+require('./controllers/maincontrollers.js')(app);
 //Main route
 app.get('/', function(req,res) {
 	res.send("");
