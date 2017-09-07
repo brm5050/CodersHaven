@@ -1,13 +1,24 @@
-.navbar {
-  position: relative;
+$navBlack: #000703;
+$limeGreen: #93ff89;
+
+.navbar-custom {
   min-height: 50px;
-  margin: -10px -10px 20px -10px;
-  padding: 5px 15px 5px 15px ;
-  border: 1px solid transparent;
-  background-color: gray;
+  padding: 5px 5px 5px 5px;
+  background-color: $navBlack;
+  border-radius: 0px;
 }
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 4px;
-  }
+
+
+.codershaven-logo {
+	
+	max-height: 25px;
+	margin: 10px;
+	float: left;
+}
+
+.nav-item-custom {
+	float: right;
+	margin: 10px;
+	font-size: 1.2em;
+	color: $limeGreen;
 }

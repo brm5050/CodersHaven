@@ -1,0 +1,50 @@
+// color variables 
+$lightGray: #d1d1d1;
+$white: #ffffff;
+$limeGreen: #93ff89;
+$navBlack: #000703;
+
+
+.forum-header-lg {
+	text-align: center;
+	font-size: 3.5em;
+	color: $limeGreen;
+}
+
+.forum-header-sm {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.forum-container {
+	background-color: $white; 
+	border-radius: 10px;
+	padding: 0px;
+	margin-bottom: 25px;
+}
+
+.header-container {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: $navBlack;
+	max-height: 65px;
+	border-bottom-style: solid;
+	border-bottom-color: $limeGreen;
+	border-bottom-width: 3px;
+}
+
+.btn-custom {
+	margin: auto;
+}
+
+.table {
+	margin: auto;
+}
+
+.table-header {
+	text-align: center;
+}
+
+.table-data {
+	text-align: center;
+}

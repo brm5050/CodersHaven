@@ -1,0 +1,50 @@
+// color variables 
+$lightGray: #d1d1d1;
+$white: #ffffff;
+$limeGreen: #93ff89;
+$navBlack: #000703;
+
+.comment-container {
+	width: 60%;
+	margin: auto;
+	background-color: $white;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+.header-container {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: $navBlack;
+	max-height: 65px;
+	border-bottom-style: solid;
+	border-bottom-color: $limeGreen;
+	border-bottom-width: 3px;
+}
+
+.comment-header-lg {
+	text-align: center;
+	font-size: 2em;
+	color: $limeGreen;
+	margin: 0px;
+}
+
+.title-text {
+	text-align: center;
+	margin: 5px;
+}
+
+.form-group-custom {
+	margin: auto;
+	padding: 10px;
+}
+
+.btn-custom {
+	margin: 5px 0px 10px 10px;
+	color: $limeGreen;
+	background-color: $navBlack;
+	border-radius: 5px;
+	font-size: 1.3em;
+}
+
+
