@@ -1,11 +1,10 @@
 import React from "react";
-require("./css/comment.scss");
+require("./css/singlePost.scss");
 
 
-class Comment extends React.Component {
+class SinglePost extends React.Component {
 
-
-
+	
 	render() {
 		return (
 			<div className="container comment-container">
@@ -26,4 +25,4 @@ class Comment extends React.Component {
 	}
 }
 
-export default Comment;
+export default SinglePost;

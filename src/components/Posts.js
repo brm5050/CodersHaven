@@ -1,10 +1,9 @@
 import React from "react";
 require("./css/posts.scss");
 
-
 class Posts extends React.Component {
 
-
+	
 
 	render() {
 		return (
@@ -14,6 +13,7 @@ class Posts extends React.Component {
 				</div>
 				<p className="forum-header-sm"> All posts, organized by most recent.</p>
 				<button type="button" className="btn btn-custom"> Add a comment </button>
+
 				<table className="table">
 					<thead>
 						<tr>
@@ -42,6 +42,7 @@ class Posts extends React.Component {
 		)
 	}
 }
+
 
 export default Posts;
 
