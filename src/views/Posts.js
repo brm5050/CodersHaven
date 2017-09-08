@@ -1,5 +1,5 @@
 import React from "react";
-require("./css/posts.scss");
+require("../css/posts.scss");
 
 class Posts extends React.Component {
 
@@ -12,8 +12,6 @@ class Posts extends React.Component {
 					<p className="forum-header-lg"> All Posts </p>
 				</div>
 				<p className="forum-header-sm"> All posts, organized by most recent.</p>
-				<button type="button" className="btn btn-custom"> Add a comment </button>
-
 				<table className="table">
 					<thead>
 						<tr>

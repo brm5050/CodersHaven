@@ -1,10 +1,13 @@
 import React, {Component} from "react";
 import Header from "./header";
-import Form from "./form";
-import Body from "./body";
+import Form from "../views/form";
+import Posts from "../views/posts";
+import SinglePost from "../views/singlePost";
+import CreatePost from "../views/createPost";
 import Footer from "./footer";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import Routes from "./routes";
 
 // no need for css in this file.
 //idk github says this is required for it
@@ -42,7 +45,9 @@ class App extends React.Component {
 				<MuiThemeProvider>
 					<Form onChange={fields => this.onChange(fields)} />
 				</MuiThemeProvider>	
-				<Body />
+				<Posts />
+				<SinglePost />
+				<CreatePost />
 				<Footer />
 			</div>
 		)
@@ -50,3 +55,9 @@ class App extends React.Component {
 }
 
 export default App;
+
+/* sept 7th
+make a folder for the components that arent the header, footer and body and name it views.
+in there. from the app.js you can have a state that renders different views kind of like what handlebars
+does but the react components are your templates. 
+*/

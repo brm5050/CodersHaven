@@ -1,5 +1,5 @@
 import React from "react";
-require("./css/singlePost.scss");
+require("../css/singlePost.scss");
 
 
 class SinglePost extends React.Component {

@@ -58,7 +58,7 @@ typings/
 .env
 
 # Mac OSX
-DS_Store
+.DS_Store
 
 # Custom
 tasks.md

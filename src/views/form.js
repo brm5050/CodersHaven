@@ -1,5 +1,5 @@
 import React from "react";
-require("../components/css/form.scss");
+require("../css/form.scss");
 //importing the textfield for material ui
 import TextField from 'material-ui/TextField';
 //importing raised button
