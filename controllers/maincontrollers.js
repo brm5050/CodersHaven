@@ -1,3 +1,5 @@
+'use strict';
+
 var mongoose = require('mongoose');
 var Posts = require('../models/posts.js');
 var Comments = require('../models/posts.js');
@@ -13,21 +15,44 @@ module.exports = function(app) {
 	});
 
 	app.post('/newpost', function(req,res) {
-		var newPost = new Posts({
-			author: req.author,
-			title: req.title,
-			body: req.body,
-			date: new Date()
-		});
+		console.log(req.body);
+		var newPost = new Posts(req.body);
 
 		newPost.save(function(err) {
 			if(err) throw err;
-			res.send("Saved!");
+			res.send("Post saved!");
 		});
 	});
 
 	app.post('/newcomment', function(req,res) {
+		var newComment = new Comments(req.body);
 
-	})
+		newComment.save(function(err) {
+			if(err) throw err;
+			res.send("Comment saved!");
+		});
+
+	});
+
+	app.get('/getposts', function(req,res) {
+		Posts.find()
+			.then(function(data) {
+				console.log(data);
+				res.send("Get complete!");
+			});
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 };
