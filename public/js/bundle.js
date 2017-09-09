@@ -887,7 +887,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
->>>>>>> master
+
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1273,10 +1273,7 @@ module.exports = ReactComponentTreeHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-<<<<<<< HEAD
-/* 12 */,
-/* 13 */,
-=======
+
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1309,7 +1306,7 @@ module.exports = function (target) {
 
 
 /***/ }),
->>>>>>> master
+
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1384,13 +1381,7 @@ module.exports = { debugTool: debugTool };
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-<<<<<<< HEAD
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-=======
+
 /* 16 */
 /***/ (function(module, exports) {
 
@@ -1500,7 +1491,7 @@ exports.default = function (subClass, superClass) {
 };
 
 /***/ }),
->>>>>>> master
+
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1792,9 +1783,7 @@ module.exports = ReactUpdates;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-<<<<<<< HEAD
-/* 23 */,
-=======
+
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1812,7 +1801,7 @@ $exports.store = store;
 
 
 /***/ }),
->>>>>>> master
+
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2085,10 +2074,7 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-<<<<<<< HEAD
-/* 25 */,
-/* 26 */,
-=======
+
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2150,7 +2136,7 @@ exports.default = {
 };
 
 /***/ }),
->>>>>>> master
+
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
