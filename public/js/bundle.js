@@ -23161,7 +23161,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-custom {\n  min-height: 50px;\n  padding: 5px 5px 5px 5px;\n  background-color: #000703;\n  border-radius: 0px; }\n\n.codershaven-logo {\n  max-height: 25px;\n  margin: 10px;\n  float: left; }\n\n.nav-item-custom {\n  float: right;\n  margin: 10px;\n  font-size: 1.2em;\n  color: #93ff89; }\n", ""]);
+exports.push([module.i, ".navbar-custom {\n  min-height: 50px;\n  padding: 5px 5px 5px 5px;\n  background-color: #00BCD4;\n  border-radius: 0px; }\n\n.codershaven-logo {\n  max-height: 25px;\n  margin: 10px;\n  float: left; }\n\n.nav-item-custom {\n  float: right;\n  margin: 10px;\n  font-size: 1.2em;\n  color: white; }\n", ""]);
 
 // exports
 
@@ -23301,7 +23301,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  position: relative;\n  margin-top: 60px;\n  bottom: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #000703;\n  padding: 20px; }\n\n.footer-text {\n  text-align: center;\n  color: #93ff89;\n  margin: 0px; }\n", ""]);
+exports.push([module.i, ".footer {\n  position: relative;\n  margin-top: 60px;\n  bottom: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #00BCD4;\n  padding: 20px; }\n\n.footer-text {\n  text-align: center;\n  color: white;\n  margin: 0px; }\n", ""]);
 
 // exports
 
