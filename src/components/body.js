@@ -1,26 +1,28 @@
 import React from "react";
 require("./css/body.scss");
 import Posts from "./posts";
-import SinglePost from "./singlePost";
+import Singlepost from "./singlePost";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 
 
 class Body extends React.Component {
 
 	constructor() {
-	    super();
-	    this.state = {
-	      showComment: false
-	    }
-  	}
-
-  	// 
+    super();
+    this.state = {
+      showComment: false
+    }
+  }
 
 	render() {
 		return (
 			<div className="container-fluid">
 				<Posts />
-				<SinglePost />
+				<MuiThemeProvider>
+				<Singlepost />
+				</MuiThemeProvider>
 			</div>	
 		)
 	}

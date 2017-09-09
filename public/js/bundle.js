@@ -35880,7 +35880,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-custom {\n  min-height: 50px;\n  padding: 5px 5px 5px 5px;\n  background-color: #000703;\n  border-radius: 0px; }\n\n.codershaven-logo {\n  max-height: 25px;\n  margin: 10px;\n  float: left; }\n\n.nav-item-custom {\n  float: right;\n  margin: 10px;\n  font-size: 1.2em;\n  color: #93ff89; }\n", ""]);
+exports.push([module.i, ".navbar-custom {\n  min-height: 50px;\n  padding: 5px 5px 5px 5px;\n  background-color: #00BCD4;\n  border-radius: 0px; }\n\n.codershaven-logo {\n  max-height: 25px;\n  margin: 10px;\n  float: left; }\n\n.nav-item-custom {\n  float: right;\n  margin: 10px;\n  font-size: 1.2em;\n  color: white; }\n", ""]);
 
 // exports
 
@@ -36155,6 +36155,10 @@ var _singlePost = __webpack_require__(463);
 
 var _singlePost2 = _interopRequireDefault(_singlePost);
 
+var _MuiThemeProvider = __webpack_require__(399);
+
+var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36179,8 +36183,6 @@ var Body = function (_React$Component) {
 		return _this;
 	}
 
-	// 
-
 	_createClass(Body, [{
 		key: "render",
 		value: function render() {
@@ -36188,7 +36190,11 @@ var Body = function (_React$Component) {
 				"div",
 				{ className: "container-fluid" },
 				_react2.default.createElement(_posts2.default, null),
-				_react2.default.createElement(_singlePost2.default, null)
+				_react2.default.createElement(
+					_MuiThemeProvider2.default,
+					null,
+					_react2.default.createElement(_singlePost2.default, null)
+				)
 			);
 		}
 	}]);
@@ -36392,7 +36398,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".forum-header-lg {\n  text-align: center;\n  font-size: 3.5em;\n  color: #93ff89; }\n\n.forum-header-sm {\n  text-align: center;\n  font-size: 2.5em; }\n\n.forum-container {\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px;\n  margin-bottom: 25px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #000703;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: #93ff89;\n  border-bottom-width: 3px; }\n\n.btn-custom {\n  margin: auto; }\n\n.table {\n  margin: auto; }\n\n.table-header {\n  text-align: center; }\n\n.table-data {\n  text-align: center; }\n", ""]);
+exports.push([module.i, ".forum-header-lg {\n  text-align: center;\n  font-size: 3.5em;\n  color: white; }\n\n.forum-header-sm {\n  text-align: center;\n  font-size: 2.5em; }\n\n.forum-container {\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px;\n  margin-bottom: 25px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #000703;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: white;\n  border-bottom-width: 3px; }\n\n.btn-custom {\n  margin: auto; }\n\n.table {\n  margin: auto; }\n\n.table-header {\n  text-align: center; }\n\n.table-data {\n  text-align: center; }\n", ""]);
 
 // exports
 
@@ -36413,6 +36419,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _RaisedButton = __webpack_require__(372);
+
+var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36436,6 +36446,8 @@ var SinglePost = function (_React$Component) {
 	_createClass(SinglePost, [{
 		key: "render",
 		value: function render() {
+			var _this2 = this;
+
 			return _react2.default.createElement(
 				"div",
 				{ className: "container comment-container" },
@@ -36445,18 +36457,8 @@ var SinglePost = function (_React$Component) {
 					_react2.default.createElement(
 						"p",
 						{ className: "comment-header-lg" },
-						" Add a comment "
+						"Reply to this post"
 					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "form-group form-group-custom" },
-					_react2.default.createElement(
-						"p",
-						{ className: "title-text" },
-						" Enter a title: "
-					),
-					_react2.default.createElement("input", { type: "text", className: "form-control", id: "title", placeholder: "Title" })
 				),
 				_react2.default.createElement(
 					"div",
@@ -36468,17 +36470,16 @@ var SinglePost = function (_React$Component) {
 					),
 					_react2.default.createElement("textarea", { className: "form-control", id: "comment", rows: "3", placeholder: "Sample comment" })
 				),
-				_react2.default.createElement(
-					"button",
-					{ type: "button", className: "btn btn-custom" },
-					" Submit "
-				)
+				_react2.default.createElement(_RaisedButton2.default, { label: "Post", onClick: function onClick(e) {
+						return _this2.onLogin(e);
+					}, primary: true })
 			);
 		}
 	}]);
 
 	return SinglePost;
 }(_react2.default.Component);
+//change "name of post to an actual posts data"
 
 exports.default = SinglePost;
 
@@ -36522,7 +36523,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".comment-container {\n  width: 60%;\n  margin: auto;\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #000703;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: #93ff89;\n  border-bottom-width: 3px; }\n\n.comment-header-lg {\n  text-align: center;\n  font-size: 2em;\n  color: #93ff89;\n  margin: 0px; }\n\n.title-text {\n  text-align: center;\n  margin: 5px; }\n\n.form-group-custom {\n  margin: auto;\n  padding: 10px; }\n\n.btn-custom {\n  margin: 5px 0px 10px 10px;\n  color: #93ff89;\n  background-color: #000703;\n  border-radius: 5px;\n  font-size: 1.3em; }\n", ""]);
+exports.push([module.i, ".comment-container {\n  width: 60%;\n  margin: auto;\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #00BCD4;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: white;\n  border-bottom-width: 3px; }\n\n.comment-header-lg {\n  text-align: center;\n  font-size: 2em;\n  color: white;\n  margin: 0px; }\n\n.title-text {\n  text-align: center;\n  margin: 5px; }\n\n.form-group-custom {\n  margin: auto;\n  padding: 10px; }\n\n.btn-custom {\n  margin: 5px 0px 10px 10px;\n  color: white;\n  background-color: #00BCD4;\n  border-radius: 5px;\n  font-size: 1.3em; }\n", ""]);
 
 // exports
 
@@ -36612,7 +36613,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  position: relative;\n  margin-top: 60px;\n  bottom: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #000703;\n  padding: 20px; }\n\n.footer-text {\n  text-align: center;\n  color: #93ff89;\n  margin: 0px; }\n", ""]);
+exports.push([module.i, ".footer {\n  position: relative;\n  margin-top: 60px;\n  bottom: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #00BCD4;\n  padding: 20px; }\n\n.footer-text {\n  text-align: center;\n  color: white;\n  margin: 0px; }\n", ""]);
 
 // exports
 
