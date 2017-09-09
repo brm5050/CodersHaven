@@ -33,7 +33,7 @@ module.exports = function(app) {
 		Posts.find()
 			.then(function(data) {
 				console.log(data);
-				res.send("Get complete!");
+				res.send(data);
 			});
 	});
 
