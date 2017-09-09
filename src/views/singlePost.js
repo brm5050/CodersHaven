@@ -18,7 +18,7 @@ class SinglePost extends React.Component {
 					<p className="title-text"> Enter your comment: </p>
 			    	<textarea className="form-control" id="comment" rows="3" placeholder="Sample comment"></textarea>
 			  	</div>
-			  	<RaisedButton label="Post" onClick={e => this.onLogin(e)} primary />
+			  	<button> Hello world </button>
 			</div>
 		)
 	}
