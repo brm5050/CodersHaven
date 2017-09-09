@@ -1,12 +1,7 @@
 import React from "react";
-<<<<<<< HEAD:src/views/singlePost.js
 require("../css/singlePost.scss");
 import Header from "../components/header";
 import Footer from "../components/footer";
-=======
-import RaisedButton from "material-ui/RaisedButton";
-require("./css/singlePost.scss");
->>>>>>> master:src/components/singlePost.js
 
 
 class SinglePost extends React.Component {
