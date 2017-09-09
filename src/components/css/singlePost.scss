@@ -15,17 +15,17 @@ $navBlack: #000703;
 .header-container {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	background-color: $navBlack;
+	background-color: #00BCD4;
 	max-height: 65px;
 	border-bottom-style: solid;
-	border-bottom-color: $limeGreen;
+	border-bottom-color: white;
 	border-bottom-width: 3px;
 }
 
 .comment-header-lg {
 	text-align: center;
 	font-size: 2em;
-	color: $limeGreen;
+	color: white;
 	margin: 0px;
 }
 
@@ -41,8 +41,8 @@ $navBlack: #000703;
 
 .btn-custom {
 	margin: 5px 0px 10px 10px;
-	color: $limeGreen;
-	background-color: $navBlack;
+	color: white;
+	background-color: #00BCD4;
 	border-radius: 5px;
 	font-size: 1.3em;
 }

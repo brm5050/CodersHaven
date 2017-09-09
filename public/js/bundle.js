@@ -25287,7 +25287,7 @@ exports = module.exports = __webpack_require__(32)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-custom {\n  min-height: 50px;\n  padding: 5px 5px 5px 5px;\n  background-color: #000703;\n  border-radius: 0px; }\n\n.codershaven-logo {\n  max-height: 25px;\n  margin: 10px;\n  float: left; }\n\n.nav-item-custom {\n  float: right;\n  margin: 10px;\n  font-size: 1.2em;\n  color: #93ff89; }\n", ""]);
+exports.push([module.i, ".navbar-custom {\n  min-height: 50px;\n  padding: 5px 5px 5px 5px;\n  background-color: #00BCD4;\n  border-radius: 0px; }\n\n.codershaven-logo {\n  max-height: 25px;\n  margin: 10px;\n  float: left; }\n\n.nav-item-custom {\n  float: right;\n  margin: 10px;\n  font-size: 1.2em;\n  color: white; }\n", ""]);
 
 // exports
 
@@ -31001,7 +31001,7 @@ exports = module.exports = __webpack_require__(32)(undefined);
 
 
 // module
-exports.push([module.i, ".forum-header-lg {\n  text-align: center;\n  font-size: 3.5em;\n  color: #93ff89; }\n\n.forum-header-sm {\n  text-align: center;\n  font-size: 2.5em; }\n\n.forum-container {\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px;\n  margin-bottom: 25px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #000703;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: #93ff89;\n  border-bottom-width: 3px; }\n\n.btn-custom {\n  margin: auto; }\n\n.table {\n  margin: auto; }\n\n.table-header {\n  text-align: center; }\n\n.table-data {\n  text-align: center; }\n", ""]);
+exports.push([module.i, ".forum-header-lg {\n  text-align: center;\n  font-size: 3.5em;\n  color: white; }\n\n.forum-header-sm {\n  text-align: center;\n  font-size: 2.5em; }\n\n.forum-container {\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px;\n  margin-bottom: 25px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #000703;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: white;\n  border-bottom-width: 3px; }\n\n.btn-custom {\n  margin: auto; }\n\n.table {\n  margin: auto; }\n\n.table-header {\n  text-align: center; }\n\n.table-data {\n  text-align: center; }\n", ""]);
 
 // exports
 
@@ -31126,7 +31126,7 @@ exports = module.exports = __webpack_require__(32)(undefined);
 
 
 // module
-exports.push([module.i, ".comment-container {\n  width: 60%;\n  margin: auto;\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #000703;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: #93ff89;\n  border-bottom-width: 3px; }\n\n.comment-header-lg {\n  text-align: center;\n  font-size: 2em;\n  color: #93ff89;\n  margin: 0px; }\n\n.title-text {\n  text-align: center;\n  margin: 5px; }\n\n.form-group-custom {\n  margin: auto;\n  padding: 10px; }\n\n.btn-custom {\n  margin: 5px 0px 10px 10px;\n  color: #93ff89;\n  background-color: #000703;\n  border-radius: 5px;\n  font-size: 1.3em; }\n", ""]);
+exports.push([module.i, ".comment-container {\n  width: 60%;\n  margin: auto;\n  background-color: #ffffff;\n  border-radius: 10px;\n  padding: 0px; }\n\n.header-container {\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  background-color: #00BCD4;\n  max-height: 65px;\n  border-bottom-style: solid;\n  border-bottom-color: white;\n  border-bottom-width: 3px; }\n\n.comment-header-lg {\n  text-align: center;\n  font-size: 2em;\n  color: white;\n  margin: 0px; }\n\n.title-text {\n  text-align: center;\n  margin: 5px; }\n\n.form-group-custom {\n  margin: auto;\n  padding: 10px; }\n\n.btn-custom {\n  margin: 5px 0px 10px 10px;\n  color: white;\n  background-color: #00BCD4;\n  border-radius: 5px;\n  font-size: 1.3em; }\n", ""]);
 
 // exports
 
@@ -36133,7 +36133,7 @@ exports = module.exports = __webpack_require__(32)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  position: relative;\n  margin-top: 60px;\n  bottom: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #000703;\n  padding: 20px; }\n\n.footer-text {\n  text-align: center;\n  color: #93ff89;\n  margin: 0px; }\n", ""]);
+exports.push([module.i, ".footer {\n  position: relative;\n  margin-top: 60px;\n  bottom: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #00BCD4;\n  padding: 20px; }\n\n.footer-text {\n  text-align: center;\n  color: white;\n  margin: 0px; }\n", ""]);
 
 // exports
 
