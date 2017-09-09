@@ -780,11 +780,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-<<<<<<< HEAD
-/* 8 */,
-/* 9 */,
-/* 10 */,
-=======
+
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
