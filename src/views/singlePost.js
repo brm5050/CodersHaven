@@ -1,5 +1,7 @@
 import React from "react";
 require("../css/singlePost.scss");
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 
 class SinglePost extends React.Component {

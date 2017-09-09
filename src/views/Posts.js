@@ -1,9 +1,9 @@
 import React from "react";
 require("../css/posts.scss");
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 class Posts extends React.Component {
-
-	
 
 	render() {
 		return (
