@@ -24,6 +24,7 @@ var port = 3000;
 
 
 require('./controllers/maincontrollers.js')(app);
+require('./migrations/seeds.js')(mongoose);
 //Main route
 
 app.listen(port, function() {
