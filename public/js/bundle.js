@@ -14689,7 +14689,7 @@ var Footer = function (_React$Component) {
 				_react2.default.createElement(
 					"p",
 					{ className: "footer-text" },
-					"\xA9 2017 Coders Haven. Created by: Daniel Blanco, Mike Viannuci, Chris Barnes, Bryan Modula "
+					"\xA9 2017 Coders Haven. Created by: Daniel Blanco, Mike Vannucci, Chris Barnes, Bryan Modula "
 				)
 			);
 		}
@@ -32144,118 +32144,10 @@ module.exports = function (css) {
 
 /***/ }),
 /* 317 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _header = __webpack_require__(136);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _footer = __webpack_require__(137);
-
-var _footer2 = _interopRequireDefault(_footer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-__webpack_require__(22);
-
-var Posts = function (_React$Component) {
-	_inherits(Posts, _React$Component);
-
-	// a discussion board tutorial
-	// https://www.youtube.com/watch?v=NMiYaaB0-fI
-	function Posts(props) {
-		_classCallCheck(this, Posts);
-
-		var _this = _possibleConstructorReturn(this, (Posts.__proto__ || Object.getPrototypeOf(Posts)).call(this, props));
-
-		var articles = [{ id: 1, name: "Daniel", title: 'React.js', content: 'I worked on dynamic elements and styling' }, { id: 2, name: "Chris", title: 'React.js x2', content: 'I worked on dynamic elements and styling as well' }, { id: 3, name: "Bryan", title: 'AWS', content: 'I set up the AWS server to host our site.' }, { id: 4, name: "Mike", title: 'Node.js', content: 'I worked on the server with node.js.' }];
-
-		_this.state = { articles: articles };
-		console.log("this.state: ", _this.state);
-
-		return _this;
-	}
-
-	_createClass(Posts, [{
-		key: "render",
-		value: function render() {
-			var articles = this.state.articles;
-			return _react2.default.createElement(
-				"div",
-				{ className: "container forum-container" },
-				_react2.default.createElement(
-					"div",
-					{ className: "container" },
-					_react2.default.createElement(
-						"h1",
-						{ className: "text-center" },
-						" All Posts "
-					)
-				),
-				_react2.default.createElement(
-					"h2",
-					{ className: "text-center" },
-					" All posts, organized by most recent."
-				),
-				_react2.default.createElement(
-					"div",
-					null,
-					articles.map(function (articles) {
-						return _react2.default.createElement(
-							"div",
-							{ id: "articleSection" },
-							_react2.default.createElement(
-								"h3",
-								{ className: "text-center", key: articles.id },
-								" ",
-								articles.name,
-								" "
-							),
-							_react2.default.createElement(
-								"h2",
-								{ className: "text-center", key: articles.name },
-								"  ",
-								articles.title,
-								" "
-							),
-							_react2.default.createElement(
-								"p",
-								{ className: "text-center", key: articles.title },
-								" ",
-								articles.content,
-								" "
-							),
-							_react2.default.createElement("div", { id: "commentSection" })
-						);
-					})
-				)
-			);
-		}
-	}]);
-
-	return Posts;
-}(_react2.default.Component);
-
-exports.default = Posts;
+throw new Error("Module build failed: SyntaxError: Unexpected token (50:1)\n\n\u001b[0m \u001b[90m 48 | \u001b[39m\t\t\t\t\u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 49 | \u001b[39m\t\t\t\t\t{articles\u001b[33m.\u001b[39mmap(articles \u001b[33m=>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 | \u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\n \u001b[90m    | \u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 | \u001b[39m\t\t\t\t\t\t\u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m id\u001b[33m=\u001b[39m\u001b[32m\"articleSection\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 52 | \u001b[39m\t\t\t\t\t\t\t\u001b[33m<\u001b[39m\u001b[33mh3\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"text-center\"\u001b[39m key\u001b[33m=\u001b[39m{articles\u001b[33m.\u001b[39mid}\u001b[33m>\u001b[39m {articles\u001b[33m.\u001b[39mname} \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mh3\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 53 | \u001b[39m\t\t\t\t\t\t\t\u001b[33m<\u001b[39m\u001b[33mh2\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"text-center\"\u001b[39mkey\u001b[33m=\u001b[39m{articles\u001b[33m.\u001b[39mname}\u001b[33m>\u001b[39m  {articles\u001b[33m.\u001b[39mtitle} \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mh2\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n");
 
 /***/ }),
 /* 318 */
