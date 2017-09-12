@@ -31,7 +31,6 @@ module.exports = function(app) {
 
 	app.get('/api/getposts', function(req,res) {
 		Posts.find()
-
 		.populate("comments")
 		.exec(function(error, data) {
 			if(error) {
