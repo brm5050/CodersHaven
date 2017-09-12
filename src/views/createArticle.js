@@ -13,8 +13,8 @@ class CreatePost extends React.Component {
 		super(props);
 		this.state= {
 			name: "",
-			postTitle: "",
-			postBody: ""
+			articleTitle: "",
+			articleBody: ""
 		}
 	}
 
@@ -39,11 +39,11 @@ class CreatePost extends React.Component {
 					</div>
 					<div className="form-group form-group-custom ">
 						<label className="control-label"> Post title </label>
-						<input type="text" value={this.state.postTitle} onChange={this.onChange.bind(this)} name="postTitle" className="form-control"/>
+						<input type="text" value={this.state.articleTitle} onChange={this.onChange.bind(this)} name="articleTitle" className="form-control"/>
 					</div>
 					<div className="form-group form-group-custom ">
 						<label className="control-label"> Post body </label>
-						<textarea type="text" value={this.state.postBody} onChange={this.onChange.bind(this)} name="postBody" className="form-control" rows="3"/>
+						<textarea type="text" value={this.state.articleBody} onChange={this.onChange.bind(this)} name="articleBody" className="form-control" rows="3"/>
 					</div>
 					<div className="form-group">
 						<button className="btn btn-custom"> Submit </button>

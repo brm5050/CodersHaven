@@ -31,10 +31,13 @@ class Posts extends React.Component {
 				<h2 className="text-center"> All posts, organized by most recent.</h2>
 				<div>
 					{articles.map(articles =>
-						<div>
+						<div id="articleSection">
 							<h3 className="text-center" key={articles.id}> {articles.name} </h3>
 							<h2 className="text-center"key={articles.name}>  {articles.title} </h2>
 							<p className="text-center"key={articles.title}> {articles.content} </p>
+							<div id="commentSection">
+
+							</div>
 						</div>
 					)}
 				</div>
