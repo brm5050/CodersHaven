@@ -1,28 +1,46 @@
+// packages
 import React from "react";
-require("../css/singlePost.scss");
-import Header from "../components/header";
-import Footer from "../components/footer";
+import { connect } from "react-redux";
 
+// internal files
+require("../css/singlePost.scss");
+import { userCommentRequest } from "../actions/commentActions";
 
 class SinglePost extends React.Component {
 
-	
+	constructor(props) {
+		super(props);
+		this.state= {
+			postComment: ""
+		}
+	}
+
+	onChange(event) {
+		this.setState({[event.target.name]: event.target.value})
+	}
+
+	onSubmit(event) {
+    event.preventDefault();
+		console.log("onSubmit triggered");
+		this.props.userCommentRequest(this.state);
+  }
+
 	render() {
 		return (
 
-			<div className="container comment-container">
-				<div className="header-container">
-					<p className="comment-header-lg">Reply to this post</p>
-				</div>
-				<div className="form-group form-group-custom">
-					<p className="title-text"> Enter your comment: </p>
-			    	<textarea className="form-control" id="comment" rows="3" placeholder="Sample comment"></textarea>
-			  	</div>
-			  	<button> Hello world </button>
+			<div className=" container form-container">
+				<form onSubmit={this.onSubmit.bind(this)}>
+					<h1>Reply to this post</h1>
+					<div className="form-group form-group-custom ">
+						<label className="control-label"> Enter your comment: </label>
+						<textarea type="text" value={this.state.postComment} onChange={this.onChange.bind(this)} name="postComment" className="form-control" rows="3" placeholder=" Type your comment here!"/>
+					</div>
+					<div className="form-group">
+						<button className="btn btn-custom"> Submit </button>
+					</div>
+				</form>
 			</div>
 		)
 	}
 }
-//change "name of post to an actual posts data"
-
-export default SinglePost;
+export default connect((state) => {return {} }, {userCommentRequest})(SinglePost);

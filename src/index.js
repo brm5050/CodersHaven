@@ -1,29 +1,29 @@
+// packages
 import React from "react";
 import ReactDOM from "react-dom";
-require("./css/index.scss");
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
 import {Router, Route, hashHistory, IndexRoute} from "react-router";
-import Form from "./views/form";
-import Posts from "./views/posts";
-import SinglePost from "./views/SinglePost";
-import CreatePost from "./views/CreatePost";
-import App from "./components/App";
 
+// components / views / styles
+require("./css/index.scss");
+import Routes from "./Routes";
 
-
-const Routes = (
-	<Route path="/" component={App}>
-		<Route path="/posts" component={Posts}/>
-		<Route path="/posts/single" component={SinglePost}/>
-		<Route path="/posts/create" component={CreatePost}/>
-		<IndexRoute component={Form}/>
-	</Route>	
-
-)
-
+// 9/10 11:42am
+// for redux. redux needs to have a store which delegates changes. look more into that.
+// thunk is a redux middleware that allows for async functions
+const store = createStore(
+	(state = {}) => state,
+	applyMiddleware(thunk)
+);
 
 ReactDOM.render(
-	
-	<Router history={hashHistory}
-	routes={Routes}
-	/>
-, document.getElementById("App"));
+	<Provider store={store}>
+		<Router history={hashHistory}
+			routes={Routes}
+		/>
+	</Provider>, document.getElementById("App"));
+
+
+// userauth branch

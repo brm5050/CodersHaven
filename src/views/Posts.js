@@ -4,6 +4,15 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 class Posts extends React.Component {
+	// a discussion board tutorial
+	// https://www.youtube.com/watch?v=NMiYaaB0-fI
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			articles: []
+		}
+	}
 
 	render() {
 		return (
@@ -16,23 +25,23 @@ class Posts extends React.Component {
 					<thead>
 						<tr>
 							<th className="table-header"> Title </th>
-							<th className="table-header"> Author </th>	
-							<th className="table-header"> Comments </th>	
+							<th className="table-header"> Author </th>
+							<th className="table-header"> Comments </th>
 							<th className="table-header"> Date posted </th>
 						</tr>
-					</thead>	
+					</thead>
 					<tbody>
 						<tr>
-							<td className="table-data"> test data </td>
-							<td className="table-data"> test data </td>
-							<td className="table-data"> test data </td>
-							<td className="table-data"> test data </td>
+							<td className="table-data" value={this.state.title}> test data </td>
+							<td className="table-data" value={this.state.author}> test data </td>
+							<td className="table-data" value={this.state.commentAmount}> test data </td>
+							<td className="table-data" value={this.state.datePosted}> test data </td>
 						</tr>
 						<tr>
-							<td className="table-data"> test data </td>
-							<td className="table-data"> test data </td>
-							<td className="table-data"> test data </td>
-							<td className="table-data"> test data </td>
+							<td className="table-data" value={this.state.title}> test data </td>
+							<td className="table-data" value={this.state.author}> test data </td>
+							<td className="table-data" value={this.state.commentAmount}> test data </td>
+							<td className="table-data" value={this.state.datePosted}> test data </td>
 						</tr>
 					</tbody>
 				</table>
@@ -43,8 +52,3 @@ class Posts extends React.Component {
 
 
 export default Posts;
-
-
-
-
-			

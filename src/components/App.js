@@ -1,4 +1,7 @@
+// packages
 import React, {Component} from "react";
+
+// components / views
 import Header from "./header";
 import Footer from "./footer";
 
@@ -22,7 +25,7 @@ export default App;
 /* sept 7th
 make a folder for the components that arent the header, footer and body and name it views.
 in there. from the app.js you can have a state that renders different views kind of like what handlebars
-does but the react components are your templates. 
+does but the react components are your templates.
 */
 
 /* sept 8th
