@@ -31,7 +31,6 @@ module.exports = function(app) {
 
 	app.get('/api/getposts', function(req,res) {
 		Posts.find()
-<<<<<<< HEAD
 		.populate("comments")
 		.exec(function(error, data) {
 			if(error) {
@@ -46,21 +45,3 @@ module.exports = function(app) {
 	});
 
 };
-=======
-			.then(function(data) {
-				console.log("Got posts");
-				res.send(data);
-			});
-	});
-
-	app.get('/api/getcomments', function(req,res) {
-		Comments.find()
-			.then(function(data) {
-				console.log("Got comments");
-				res.send(data);
-			});
-	});
-
-
-};
->>>>>>> 64f65127dbaf5cf655b60e5c0740fb3f58390001
