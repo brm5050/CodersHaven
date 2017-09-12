@@ -32187,115 +32187,58 @@ var Posts = function (_React$Component) {
 
 		var _this = _possibleConstructorReturn(this, (Posts.__proto__ || Object.getPrototypeOf(Posts)).call(this, props));
 
-		_this.state = {
-			articles: []
-		};
+		var articles = [{ id: 1, title: 'Hello World', content: 'Welcome to learning React!' }, { id: 2, title: 'Installation', content: 'You can install React from npm.' }];
+
+		_this.state = { articles: articles };
+		console.log("this.state: ", _this.state);
+
 		return _this;
 	}
 
 	_createClass(Posts, [{
 		key: "render",
 		value: function render() {
+			var articles = this.state.articles;
 			return _react2.default.createElement(
 				"div",
 				{ className: "container forum-container" },
 				_react2.default.createElement(
 					"div",
-					{ className: "header-container" },
+					{ className: "container" },
 					_react2.default.createElement(
-						"p",
-						{ className: "forum-header-lg" },
+						"h1",
+						{ className: "text-center" },
 						" All Posts "
 					)
 				),
 				_react2.default.createElement(
-					"p",
-					{ className: "forum-header-sm" },
+					"h2",
+					{ className: "text-center" },
 					" All posts, organized by most recent."
 				),
 				_react2.default.createElement(
-					"table",
-					{ className: "table" },
-					_react2.default.createElement(
-						"thead",
-						null,
-						_react2.default.createElement(
-							"tr",
+					"div",
+					null,
+					articles.map(function (articles) {
+						return _react2.default.createElement(
+							"div",
 							null,
 							_react2.default.createElement(
-								"th",
-								{ className: "table-header" },
-								" Title "
+								"h2",
+								{ className: "text-center", key: articles.id },
+								" ",
+								articles.title,
+								" "
 							),
 							_react2.default.createElement(
-								"th",
-								{ className: "table-header" },
-								" Author "
-							),
-							_react2.default.createElement(
-								"th",
-								{ className: "table-header" },
-								" Comments "
-							),
-							_react2.default.createElement(
-								"th",
-								{ className: "table-header" },
-								" Date posted "
+								"p",
+								{ className: "text-center" },
+								" ",
+								articles.content,
+								" "
 							)
-						)
-					),
-					_react2.default.createElement(
-						"tbody",
-						null,
-						_react2.default.createElement(
-							"tr",
-							null,
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.title },
-								" test data "
-							),
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.author },
-								" test data "
-							),
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.commentAmount },
-								" test data "
-							),
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.datePosted },
-								" test data "
-							)
-						),
-						_react2.default.createElement(
-							"tr",
-							null,
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.title },
-								" test data "
-							),
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.author },
-								" test data "
-							),
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.commentAmount },
-								" test data "
-							),
-							_react2.default.createElement(
-								"td",
-								{ className: "table-data", value: this.state.datePosted },
-								" test data "
-							)
-						)
-					)
+						);
+					})
 				)
 			);
 		}
@@ -32662,6 +32605,7 @@ var CreatePost = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (CreatePost.__proto__ || Object.getPrototypeOf(CreatePost)).call(this, props));
 
 		_this.state = {
+			name: "",
 			postTitle: "",
 			postBody: ""
 		};
@@ -32692,7 +32636,17 @@ var CreatePost = function (_React$Component) {
 					_react2.default.createElement(
 						"h1",
 						null,
-						" Join the community! "
+						" Create your post "
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "form-group form-group-custom " },
+						_react2.default.createElement(
+							"label",
+							{ className: "control-label" },
+							" Your name "
+						),
+						_react2.default.createElement("input", { type: "text", value: this.state.name, onChange: this.onChange.bind(this), name: "name", className: "form-control" })
 					),
 					_react2.default.createElement(
 						"div",
@@ -32800,7 +32754,7 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, ".form-group-custom {\n  margin: auto;\n  padding: 10px; }\n\n.btn-custom {\n  margin: 10px; }\n", ""]);
+exports.push([module.i, ".form-group-custom {\n  margin: auto;\n  padding: 10px; }\n", ""]);
 
 // exports
 

@@ -12,6 +12,7 @@ class CreatePost extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state= {
+			name: "",
 			postTitle: "",
 			postBody: ""
 		}
@@ -31,7 +32,11 @@ class CreatePost extends React.Component {
 		return (
 			<div className=" container form-container">
 				<form onSubmit={this.onSubmit.bind(this)}>
-					<h1> Join the community! </h1>
+					<h1> Create your post </h1>
+					<div className="form-group form-group-custom ">
+						<label className="control-label"> Your name </label>
+						<input type="text" value={this.state.name} onChange={this.onChange.bind(this)} name="name" className="form-control"/>
+					</div>
 					<div className="form-group form-group-custom ">
 						<label className="control-label"> Post title </label>
 						<input type="text" value={this.state.postTitle} onChange={this.onChange.bind(this)} name="postTitle" className="form-control"/>
