@@ -7,7 +7,7 @@ import thunk from "redux-thunk";
 import {Router, Route, hashHistory, IndexRoute} from "react-router";
 
 // components / views / styles
-require("./css/index.scss");
+require("./css/style.scss");
 import Routes from "./Routes";
 
 // 9/10 11:42am

@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 // internal files
-require("../css/createPost.scss");
+require("../css/style.scss");
 // calling it userArticleRequest because userPostRequest could get confuising
 import { userArticleRequest } from "../actions/articleActions";
 

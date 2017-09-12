@@ -1,0 +1,172 @@
+/* Color Variables */
+$lightGray: #d1d1d1;
+$white: #ffffff;
+$limeGreen: #93ff89;
+$navBlack: #000703;
+$darkGray: #b7b7b7;
+
+
+/* Create post */
+.form-group-custom {
+	margin: auto;
+	padding: 10px;
+}
+
+.btn-custom {
+  margin: 10px;
+}
+
+
+/* Footer*/
+.footer {
+    position: relative;
+    margin-top: 60px;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #00BCD4;
+    padding: 20px;
+}
+
+.footer-text {
+	text-align: center;
+	color: white;
+	margin: 0px;
+}
+
+
+/* Form */
+.form-container {
+	background-color: $white; 
+	border-radius: 10px;
+	padding: 0px;
+	margin-bottom: 25px;
+}
+
+
+/* Header */
+.navbar-custom {
+  min-height: 50px;
+  padding: 5px 5px 5px 5px;
+  background-color: #00BCD4;
+  border-radius: 0px;
+}
+
+
+.codershaven-logo {
+	
+	max-height: 25px;
+	margin: 10px;
+	float: left;
+}
+
+.nav-item-custom {
+	float: right;
+	margin: 10px;
+	font-size: 1.2em;
+	color: white;
+}
+
+
+/* Index */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Hind', sans-serif;
+  background-color: $darkGray;
+}
+
+
+/* Posts */
+.forum-header-lg {
+	text-align: center;
+	font-size: 3.5em;
+	color: white;
+}
+
+.forum-header-sm {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.forum-container {
+	background-color: $white; 
+	border-radius: 10px;
+	padding: 0px;
+	margin-bottom: 25px;
+}
+
+.header-container {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: $navBlack;
+	max-height: 65px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 3px;
+}
+
+.btn-custom {
+	margin: auto;
+}
+
+.table {
+	margin: auto;
+}
+
+.table-header {
+	text-align: center;
+}
+
+.table-data {
+	text-align: center;
+}
+
+
+/* Single Post */
+.comment-container {
+	width: 60%;
+	margin: auto;
+	background-color: $white;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+.header-container {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: #00BCD4;
+	max-height: 65px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 3px;
+}
+
+.comment-header-lg {
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	margin: 0px;
+}
+
+.title-text {
+	text-align: center;
+	margin: 5px;
+}
+
+.form-group-custom {
+	margin: auto;
+	padding: 10px;
+}
+
+.btn-custom {
+	margin: 5px 0px 10px 10px;
+	color: white;
+	background-color: #00BCD4;
+	border-radius: 5px;
+	font-size: 1.3em;
+}
+
