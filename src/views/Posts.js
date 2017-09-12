@@ -18,9 +18,16 @@ class Posts extends React.Component {
 
 	}
 
+	componentDidMount() {
+		fetch('/api/getposts')
+			.then(res => res.json())
+			.then(articles => this.setState({articles}));
+	}
+
 
 	render() {
 		let articles = this.state.articles
+		console.log("Here are the articles nerd " , articles);
 		return (
 			<div className="container forum-container">
 				<div className="container">
@@ -31,7 +38,7 @@ class Posts extends React.Component {
 					{articles.map(articles =>
 						<div>
 							<h2 className="text-center" key={articles.id}> {articles.title} </h2>
-							<p className="text-center"> {articles.content} </p>
+							<p className="text-center"> {articles.body} </p>
 						</div>
 					)}
 				</div>

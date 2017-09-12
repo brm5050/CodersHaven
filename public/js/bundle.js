@@ -29797,9 +29797,21 @@ var Posts = function (_React$Component) {
 	}
 
 	_createClass(Posts, [{
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			var _this2 = this;
+
+			fetch('/api/getposts').then(function (res) {
+				return res.json();
+			}).then(function (articles) {
+				return _this2.setState({ articles: articles });
+			});
+		}
+	}, {
 		key: "render",
 		value: function render() {
 			var articles = this.state.articles;
+			console.log("Here are the articles nerd ", articles);
 			return _react2.default.createElement(
 				"div",
 				{ className: "container forum-container" },
@@ -29835,7 +29847,7 @@ var Posts = function (_React$Component) {
 								"p",
 								{ className: "text-center" },
 								" ",
-								articles.content,
+								articles.body,
 								" "
 							)
 						);
@@ -29991,7 +30003,7 @@ var Footer = function (_React$Component) {
 				_react2.default.createElement(
 					"p",
 					{ className: "footer-text" },
-					"\xA9 2017 Coders Haven. Created by: Daniel Blanco, Mike Viannuci, Chris Barnes, Bryan Modula "
+					"\xA9 2017 Coders Haven. Created by: Daniel Blanco, Mike Vannucci, Chris Barnes, Bryan Modula "
 				)
 			);
 		}
