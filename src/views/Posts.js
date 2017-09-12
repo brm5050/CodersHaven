@@ -47,22 +47,12 @@ class Posts extends React.Component {
 				<h2 className="text-center"> All posts, organized by most recent.</h2>
 				<div>
 					{articles.map(articles =>
-<<<<<<< HEAD
-						<div id="articleSection">
-							<h3 className="text-center" key={articles.id}> {articles.name} </h3>
-							<h2 className="text-center"key={articles.name}>  {articles.title} </h2>
-							<p className="text-center"key={articles.title}> {articles.content} </p>
-							<div id="commentSection">
-
-							</div>
-=======
 						<div>
 							<h2 className="text-center" key={articles.index}> {articles.title} </h2>
 							<p className="text-center"> {articles.body} </p>
 							{comments.map(comments => 
 								<div className="comments">{comments.body}</div>
 							)}
->>>>>>> 64f65127dbaf5cf655b60e5c0740fb3f58390001
 						</div>
 					)}
 				</div>
