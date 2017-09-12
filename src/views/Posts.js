@@ -18,20 +18,24 @@ class Posts extends React.Component {
 
 		];
 
-		this.state = {articles}
-		this.state = {comments}
+		this.state = { articles: articles, comments: comments };
 		console.log("this.state: ", this.state);
-
 	}
 
 	componentDidMount() {
 		fetch('/api/getposts')
 			.then(res => res.json())
-			.then(articles => this.setState({articles}));
+			.then(articles => {
+				this.setState({articles});
+				console.log(articles);
+			});
 
 		fetch('/api/getcomments')
 			.then(res => res.json())
-			.then(comments => this.setState({comments}));
+			.then(comments => {
+				this.setState({comments});
+				console.log(comments);
+			});
 
 	}
 
@@ -47,12 +51,11 @@ class Posts extends React.Component {
 				<h2 className="text-center"> All posts, organized by most recent.</h2>
 				<div>
 					{articles.map(articles =>
-						<div>
-							<h2 className="text-center" key={articles.index}> {articles.title} </h2>
-							<p className="text-center"> {articles.body} </p>
-							{comments.map(comments => 
-								<div className="comments">{comments.body}</div>
-							)}
+						<div id="articleSection" key={articles.id}>
+							<h3 className="text-center"> {articles.name} </h3>
+							<h2 className="text-center"> {articles.title} </h2>
+							<p className="text-center"> {articles.content} </p>
+							<div className="comments">{"this.state.comments[0].body"}</div>
 						</div>
 					)}
 				</div>

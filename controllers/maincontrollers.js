@@ -31,6 +31,7 @@ module.exports = function(app) {
 
 	app.get('/api/getposts', function(req,res) {
 		Posts.find()
+<<<<<<< HEAD
 			.then(function(data) {
 				console.log("Got posts");
 				res.send(data);
@@ -46,4 +47,19 @@ module.exports = function(app) {
 	});
 
 
+=======
+		.populate("comments")
+		.exec(function(error, data) {
+			if(error) {
+				console.log(error);
+				console.log("check your comments id route");
+			} else {
+				res.json(data);
+				console.log(data.comments);
+				console.log("pushed data to front end");
+			}
+		});
+	});
+
+>>>>>>> break
 };
