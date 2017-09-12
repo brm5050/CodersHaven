@@ -12,8 +12,12 @@ class Posts extends React.Component {
 			{id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
 			{id: 2, title: 'Installation', content: 'You can install React from npm.'}
 		];
+		var comments = [
+
+		];
 
 		this.state = {articles}
+		this.state = {comments}
 		console.log("this.state: ", this.state);
 
 	}
@@ -22,6 +26,11 @@ class Posts extends React.Component {
 		fetch('/api/getposts')
 			.then(res => res.json())
 			.then(articles => this.setState({articles}));
+
+		fetch('/api/getcomments')
+			.then(res => res.json())
+			.then(comments => this.setState({comments}));
+
 	}
 
 
@@ -37,8 +46,11 @@ class Posts extends React.Component {
 				<div>
 					{articles.map(articles =>
 						<div>
-							<h2 className="text-center" key={articles.id}> {articles.title} </h2>
+							<h2 className="text-center" key={articles.index}> {articles.title} </h2>
 							<p className="text-center"> {articles.body} </p>
+							{comments.map(comments => 
+								<div className="comments">{comments.body}</div>
+							)}
 						</div>
 					)}
 				</div>

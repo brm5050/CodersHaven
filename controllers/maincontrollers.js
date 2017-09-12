@@ -32,9 +32,18 @@ module.exports = function(app) {
 	app.get('/api/getposts', function(req,res) {
 		Posts.find()
 			.then(function(data) {
-				console.log(data);
+				console.log("Got posts");
 				res.send(data);
 			});
 	});
+
+	app.get('/api/getcomments', function(req,res) {
+		Comments.find()
+			.then(function(data) {
+				console.log("Got comments");
+				res.send(data);
+			});
+	});
+
 
 };

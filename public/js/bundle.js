@@ -29789,8 +29789,10 @@ var Posts = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (Posts.__proto__ || Object.getPrototypeOf(Posts)).call(this, props));
 
 		var articles = [{ id: 1, title: 'Hello World', content: 'Welcome to learning React!' }, { id: 2, title: 'Installation', content: 'You can install React from npm.' }];
+		var comments = [];
 
 		_this.state = { articles: articles };
+		_this.state = { comments: comments };
 		console.log("this.state: ", _this.state);
 
 		return _this;
@@ -29805,6 +29807,12 @@ var Posts = function (_React$Component) {
 				return res.json();
 			}).then(function (articles) {
 				return _this2.setState({ articles: articles });
+			});
+
+			fetch('/api/getcomments').then(function (res) {
+				return res.json();
+			}).then(function (comments) {
+				return _this2.setState({ comments: comments });
 			});
 		}
 	}, {
@@ -29838,7 +29846,7 @@ var Posts = function (_React$Component) {
 							null,
 							_react2.default.createElement(
 								"h2",
-								{ className: "text-center", key: articles.id },
+								{ className: "text-center", key: articles.index },
 								" ",
 								articles.title,
 								" "
@@ -29849,7 +29857,14 @@ var Posts = function (_React$Component) {
 								" ",
 								articles.body,
 								" "
-							)
+							),
+							comments.map(function (comments) {
+								return _react2.default.createElement(
+									"div",
+									{ className: "comments" },
+									comments.body
+								);
+							})
 						);
 					})
 				)
