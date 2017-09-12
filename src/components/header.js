@@ -23,9 +23,8 @@ class Header extends React.Component {
 			<nav className="navbar-custom navbar navbar-toggleable-md navbar-light bg-faded">
 				<img className="codershaven-logo" src="../imgs/coder-shaven2.png" alt="Coders Haven"/>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-			    	<a className="nav-item-custom" href="#"> Sign up / Sign in </a>
-			    	<a className="nav-item-custom" onClick={this.handleClick}> Create Post </a>
-			    	<a className="nav-item-custom" href="#"> About </a>
+			    	<a className="nav-item-custom" href="/#/posts/create"> Create Post </a>
+			    	<a className="nav-item-custom" href="https://github.com/brm5050/CodersHaven"> About </a>
 			    	<a className="nav-item-custom" href="#"> Home </a>
 				</div>
 			</nav>
