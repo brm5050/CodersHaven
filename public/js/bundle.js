@@ -30451,6 +30451,14 @@ var _posts = __webpack_require__(317);
 
 var _posts2 = _interopRequireDefault(_posts);
 
+var _SinglePost = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./views/SinglePost\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _SinglePost2 = _interopRequireDefault(_SinglePost);
+
+var _CreatePost = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./views/CreatePost\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _CreatePost2 = _interopRequireDefault(_CreatePost);
+
 var _App = __webpack_require__(318);
 
 var _App2 = _interopRequireDefault(_App);
@@ -30462,12 +30470,9 @@ var Routes = _react2.default.createElement(
 	{ path: "/", component: _App2.default },
 	_react2.default.createElement(_reactRouter.IndexRoute, { component: _posts2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: "/signup", component: _signUp2.default }),
-	_react2.default.createElement(_reactRouter.Route, { path: "/posts/single", component: SinglePost }),
-	_react2.default.createElement(_reactRouter.Route, { path: "/posts/create", component: CreatePost })
+	_react2.default.createElement(_reactRouter.Route, { path: "/posts/single", component: _SinglePost2.default }),
+	_react2.default.createElement(_reactRouter.Route, { path: "/posts/create", component: _CreatePost2.default })
 );
-// import SinglePost from "./views/SinglePost";
-// import CreatePost from "./views/CreatePost";
-
 
 // components / styles
 // packages

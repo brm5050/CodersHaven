@@ -5,8 +5,8 @@ import {Router, Route, hashHistory, IndexRoute} from "react-router";
 // components / styles
 import SignUp from "./views/signUp";
 import Posts from "./views/posts";
-// import SinglePost from "./views/SinglePost";
-// import CreatePost from "./views/CreatePost";
+import SinglePost from "./views/SinglePost";
+import CreatePost from "./views/CreatePost";
 import App from "./components/App";
 
 const Routes = (
