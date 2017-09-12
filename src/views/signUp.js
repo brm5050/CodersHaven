@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 // internal files
-require("../css/form.scss");
+require("../css/style.scss");
 import { userSignupRequest } from "../actions/signupActions";
 
 //exporting component so it can render

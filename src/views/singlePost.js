@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 // internal files
-require("../css/singlePost.scss");
+require("../css/style.scss");
 import { userCommentRequest } from "../actions/commentActions";
 
 class SinglePost extends React.Component {

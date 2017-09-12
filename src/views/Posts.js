@@ -1,5 +1,5 @@
 import React from "react";
-require("../css/posts.scss");
+require("../css/style.scss");
 import Header from "../components/header";
 import Footer from "../components/footer";
 
