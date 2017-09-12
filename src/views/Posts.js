@@ -9,8 +9,10 @@ class Posts extends React.Component {
 	constructor(props) {
 		super(props);
 		const articles = [
-			{id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
-			{id: 2, title: 'Installation', content: 'You can install React from npm.'}
+			{id: 1, name: "Daniel", title: 'React.js', content: 'I worked on dynamic elements and styling'},
+			{id: 2, name: "Chris", title: 'React.js x2', content: 'I worked on dynamic elements and styling as well'},
+			{id: 3, name: "Bryan", title: 'AWS', content: 'I set up the AWS server to host our site.'},
+			{id: 4, name: "Mike", title: 'Node.js', content: 'I worked on the server with node.js.'}
 		];
 
 		this.state = {articles}
@@ -30,8 +32,9 @@ class Posts extends React.Component {
 				<div>
 					{articles.map(articles =>
 						<div>
-							<h2 className="text-center" key={articles.id}> {articles.title} </h2>
-							<p className="text-center"> {articles.content} </p>
+							<h3 className="text-center" key={articles.id}> {articles.name} </h3>
+							<h2 className="text-center"key={articles.name}>  {articles.title} </h2>
+							<p className="text-center"key={articles.title}> {articles.content} </p>
 						</div>
 					)}
 				</div>
