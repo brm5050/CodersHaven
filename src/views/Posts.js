@@ -9,17 +9,13 @@ class Posts extends React.Component {
 	constructor(props) {
 		super(props);
 		const articles = [
-			{id: 1, name: "Daniel", title: 'React.js', content: 'I worked on dynamic elements and styling'},
-			{id: 2, name: "Chris", title: 'React.js x2', content: 'I worked on dynamic elements and styling as well'},
-			{id: 3, name: "Bryan", title: 'AWS', content: 'I set up the AWS server to host our site.'},
-			{id: 4, name: "Mike", title: 'Node.js', content: 'I worked on the server with node.js.'}
+
 		];
-		var comments = [
+		const comments = [
 
 		];
 
 		this.state = { articles: articles, comments: comments };
-		console.log("this.state: ", this.state);
 	}
 
 	componentDidMount() {
@@ -29,14 +25,6 @@ class Posts extends React.Component {
 				this.setState({articles});
 				console.log(articles);
 			});
-
-		fetch('/api/getcomments')
-			.then(res => res.json())
-			.then(comments => {
-				this.setState({comments});
-				console.log(comments);
-			});
-
 	}
 
 
@@ -52,10 +40,10 @@ class Posts extends React.Component {
 				<div>
 					{articles.map(articles =>
 						<div id="articleSection" key={articles.id}>
-							<h3 className="text-center"> {articles.name} </h3>
-							<h2 className="text-center"> {articles.title} </h2>
-							<p className="text-center"> {articles.content} </p>
-							<div className="comments">{"this.state.comments[0].body"}</div>
+							<h3 className="text-center" > {articles.author} </h3>
+							<h2 className="text-center">  {articles.title} </h2>
+							<p className="text-center"> {articles.body} </p>
+							<div className="comments">{"the comments should go here"}</div>
 						</div>
 					)}
 				</div>

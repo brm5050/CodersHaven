@@ -5,10 +5,8 @@ import axios from "axios";
 
 // internal files
 require("../css/style.scss");
-// calling it userArticleRequest because userPostRequest could get confuising
-import { userArticleRequest } from "../actions/articleActions";
 
-class CreatePost extends React.Component {
+class CreateArticle extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -16,7 +14,7 @@ class CreatePost extends React.Component {
 			form:{
 				author: "",
 				title: "",
-				body: ""
+				body: "",
 			}
 		};
 		this.handleChange = this.handleChange.bind(this);
@@ -27,21 +25,15 @@ class CreatePost extends React.Component {
 	onSubmit(event) {
 	    event.preventDefault();
 
-	    const newForm = {
-				author: "Chris",
-				title: "Is",
-				body: "Judgemental"
-			};
+	    const newForm = this.state.form;
 
-		axios.post('/api/newpost', {
-		    firstName: 'Fred',
-		    lastName: 'Flintstone'
-		  })
+			console.log(newForm);
+			axios.post('/newpost', {newForm})
 		  .then(function (response) {
-		    console.log(response);
+		    console.log("response: ", response);
 		  })
 		  .catch(function (error) {
-		    console.log(error);
+		    console.log("error: ", error);
 		  });
 
 
@@ -52,6 +44,7 @@ class CreatePost extends React.Component {
   		const form  = this.state.form;
   		form[field] = event.target.value;
   		this.setState({form});
+			console.log(form);
   	}
 
 	render() {
@@ -80,4 +73,4 @@ class CreatePost extends React.Component {
 	}
 }
 
-export default connect((state) => {return {} }, {userArticleRequest})(CreatePost);
+export default CreateArticle;

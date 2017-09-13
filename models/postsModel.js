@@ -7,7 +7,8 @@ var postSchema = new Schema({
 	body: String,
 	upvotes: { type: Number, default: 0 },
 	downvotes: { type: Number, default: 0 },
-	date: { type: Date, default: Date.now()}
+	date: { type: Date, default: Date.now()},
+	// comments:[{type: Schema.Types.ObjectId, ref: "Comment"}]
 });
 
 var Posts = mongoose.model('Posts',postSchema);

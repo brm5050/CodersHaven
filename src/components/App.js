@@ -1,9 +1,11 @@
 // packages
 import React, {Component} from "react";
 
-// components / views
+// internal files
 import Header from "./header";
 import Footer from "./footer";
+
+
 
 // no need for css in this file.
 

@@ -4,7 +4,7 @@
   "main": "server.js",
   "description": "A Forum for Coders to Learn, Engage, and Share",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --watch",
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
