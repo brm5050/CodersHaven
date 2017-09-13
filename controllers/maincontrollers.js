@@ -15,8 +15,9 @@ module.exports = function(app) {
 
 		newPost.save(function(err) {
 			if(err) throw err;
-			res.send("Post saved!");
 		});
+		res.send("Post saved!");
+
 	});
 
 	app.post('/api/newcomment', function(req,res) {
