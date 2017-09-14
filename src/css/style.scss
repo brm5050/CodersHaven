@@ -10,6 +10,7 @@ $darkBlu: #414b51;
 
 
 /* ========== Shared =========== */
+/* ============================= */
 .App {
 	height: 100%;
 	width: 100%;
@@ -34,6 +35,7 @@ body {
 }
 
 /* ========== Header ========== */
+/* ============================ */
 .navbar-custom {
   min-height: 50px;
   padding: 5px 5px 5px 5px;
@@ -55,9 +57,10 @@ body {
 }
 
 /* ========== Footer ========== */
+/* ============================ */
 .footer {
     position: relative;
-    margin-top: 90px;
+    margin-top: 70px;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -71,15 +74,22 @@ body {
 	margin: 0px;
 }
 
+.push {
+  height: 60px;
+}
+
 /* ========== Create post ========== */
+/* ================================= */
 .form-container {
 	background-color: $white;
 	border-radius: 10px;
 	padding: 0px;
 	margin-top: 25px;
 	margin-bottom: 50px;
+	width: 80%;
 	box-shadow: 6px 6px 10px $shadowGray;
 }
+
 
 .header-container {
 	border-top-right-radius: 10px;
@@ -89,6 +99,11 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: white;
 	border-bottom-width: 3px;
+}
+
+.form-titles {
+	text-align: center;
+	font-size: 1.3em;
 }
 
 .forum-header-lg {
@@ -105,6 +120,7 @@ body {
 }
 
 /* ========== All Posts ========== */
+/* =============================== */
 .article-header {
 	text-align: center;
 	margin: 0px;
@@ -125,8 +141,8 @@ body {
 	background-color: $white;
 	border-radius: 10px;
 	padding: 5px;
-	margin-bottom: 25px;
-	margin-top: 15px;
+	margin-bottom: 45px;
+	margin-top: 25px;
 	box-shadow: 6px 6px 10px $shadowGray;
 }
 
@@ -183,5 +199,5 @@ body {
 
 .article-body-container {
 	padding: 8px;
-	margin: 0px 5px 5px 5px;
+	margin: 5px 15px 15px 15px;
 }

@@ -58,6 +58,7 @@ class Posts extends React.Component {
 							</div>
 						</div>
 					)}
+					<div className="push"></div>
 				</div>
 			</div>
 		)

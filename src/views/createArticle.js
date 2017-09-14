@@ -51,20 +51,20 @@ class CreateArticle extends React.Component {
 	render() {
 		return (
 			<div className=" container form-container">
-				<form id="submitForm" onSubmit={this.onSubmit.bind(this)}>
+				<form className="submit-form" id="submitForm" onSubmit={this.onSubmit.bind(this)}>
 					<div className="header-container">
 						<h1 className="forum-header-lg"> Create your post </h1>
 					</div>
 					<div className="form-group form-group-custom ">
-						<p className="control-label text-center"> Your name </p>
+						<p className="control-label form-titles"> Your name </p>
 						<input type="text" value={this.state.author} onChange={this.handleChange} name="author" className="form-control"/>
 					</div>
 					<div className="form-group form-group-custom ">
-						<p className="control-label text-center"> Post title </p>
+						<p className="control-label form-titles"> Post title </p>
 						<input type="text" value={this.state.title} onChange={this.handleChange} name="title" className="form-control"/>
 					</div>
 					<div className="form-group form-group-custom ">
-						<p className="control-label text-center"> Post body </p>
+						<p className="control-label form-titles"> Post body </p>
 						<textarea type="text" value={this.state.body} onChange={this.handleChange} name="body" className="form-control" rows="3"/>
 					</div>
 					<div className="form-group">
