@@ -1,26 +1,63 @@
 /* Color Variables */
 $lightGray: #d1d1d1;
-$white: #ffffff;
+$white: #f7fcff;
 $limeGreen: #93ff89;
 $navBlack: #000703;
-$darkGray: #b7b7b7;
+$darkGray: #c4ccce;
+$blu: #00BCD4;
+$shadowGray: #999999;
+$darkBlu: #414b51;
 
 
-/* Create post */
-.form-group-custom {
-	margin: auto;
-	padding: 10px;
+/* ========== Shared =========== */
+.App {
+	height: 100%;
+	width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Hind', sans-serif;
+  background-color: $darkGray;
 }
 
 .btn-custom {
-  margin: 10px;
+	margin: 5px 0px 10px 10px;
+	color: white;
+	background-color: $blu;
+	border-radius: 5px;
+	font-size: 1.3em;
 }
 
+/* ========== Header ========== */
+.navbar-custom {
+  min-height: 50px;
+  padding: 5px 5px 5px 5px;
+  background-color: $blu;
+  border-radius: 0px;
+}
 
-/* Footer*/
+.codershaven-logo {
+	max-height: 25px;
+	margin: 10px;
+	float: left;
+}
+
+.nav-item-custom {
+	float: right;
+	margin: 10px;
+	font-size: 1.2em;
+	color: $white;
+}
+
+/* ========== Footer ========== */
 .footer {
     position: relative;
-    margin-top: 60px;
+    margin-top: 90px;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -34,127 +71,32 @@ $darkGray: #b7b7b7;
 	margin: 0px;
 }
 
-
-/* Form */
+/* ========== Create post ========== */
 .form-container {
-	background-color: $white; 
-	border-radius: 10px;
-	padding: 0px;
-	margin-bottom: 25px;
-}
-
-
-/* Header */
-.navbar-custom {
-  min-height: 50px;
-  padding: 5px 5px 5px 5px;
-  background-color: #00BCD4;
-  border-radius: 0px;
-}
-
-
-.codershaven-logo {
-	
-	max-height: 25px;
-	margin: 10px;
-	float: left;
-}
-
-.nav-item-custom {
-	float: right;
-	margin: 10px;
-	font-size: 1.2em;
-	color: white;
-}
-
-
-/* Index */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: 'Hind', sans-serif;
-  background-color: $darkGray;
-}
-
-
-/* Posts */
-.forum-header-lg {
-	text-align: center;
-	font-size: 3.5em;
-	color: white;
-}
-
-.forum-header-sm {
-	text-align: center;
-	font-size: 2.5em;
-}
-
-.forum-container {
-	background-color: $white; 
-	border-radius: 10px;
-	padding: 0px;
-	margin-bottom: 25px;
-}
-
-.header-container {
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	background-color: $navBlack;
-	max-height: 65px;
-	border-bottom-style: solid;
-	border-bottom-color: white;
-	border-bottom-width: 3px;
-}
-
-.btn-custom {
-	margin: auto;
-}
-
-.table {
-	margin: auto;
-}
-
-.table-header {
-	text-align: center;
-}
-
-.table-data {
-	text-align: center;
-}
-
-
-/* Single Post */
-.comment-container {
-	width: 60%;
-	margin: auto;
 	background-color: $white;
 	border-radius: 10px;
 	padding: 0px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	box-shadow: 6px 6px 10px $shadowGray;
 }
 
 .header-container {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	background-color: #00BCD4;
+	background-color: $blu;
 	max-height: 65px;
 	border-bottom-style: solid;
 	border-bottom-color: white;
 	border-bottom-width: 3px;
 }
 
-.comment-header-lg {
+.forum-header-lg {
 	text-align: center;
-	font-size: 2em;
+	font-size: 3em;
 	color: white;
 	margin: 0px;
-}
-
-.title-text {
-	text-align: center;
-	margin: 5px;
+	padding: 7px;
 }
 
 .form-group-custom {
@@ -162,11 +104,84 @@ body {
 	padding: 10px;
 }
 
-.btn-custom {
-	margin: 5px 0px 10px 10px;
-	color: white;
-	background-color: #00BCD4;
-	border-radius: 5px;
-	font-size: 1.3em;
+/* ========== All Posts ========== */
+.article-header {
+	text-align: center;
+	margin: 0px;
+	color: $darkBlu;
 }
 
+.article-header-lg {
+	font-size: 3.5em;
+	padding-top: 5px;
+}
+
+.article-header-sm {
+	font-size: 1.5em;
+	padding-bottom: 5px;
+}
+
+.article-container {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 15px;
+	box-shadow: 6px 6px 10px $shadowGray;
+}
+
+.article-header-container {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: $blu;
+	max-height: 85px;
+	margin: -5px;
+}
+
+.article-dynamic {
+	text-align: center;
+	color: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+.article-title-dynamic {
+	font-size: 2.3rem;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.article-author {
+	font-size: 1.3em;
+	margin: auto;
+	padding: 15px 5px 5px 5px;
+	text-align: center;
+}
+
+.article-date {
+	text-align: center;
+	margin: auto;
+	padding: 5px;
+}
+
+.article-body{
+	font-size: 1.2em;
+}
+
+.article-static {
+	text-align: center;
+	color: $blu;
+	margin: 0px;
+	padding: 0px;
+}
+
+.article-title-static {
+	color: $white;
+	font-size: 1.2em;
+	padding-top: 10px;
+}
+
+.article-body-container {
+	padding: 8px;
+	margin: 0px 5px 5px 5px;
+}

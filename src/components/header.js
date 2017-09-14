@@ -21,7 +21,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<nav className="navbar-custom navbar navbar-toggleable-md navbar-light bg-faded">
-				<img className="codershaven-logo" src="../imgs/coder-shaven2.png" alt="Coders Haven"/>
+				<img className="codershaven-logo" src="../imgs/coder-shaven-01.png" alt="Coders Haven"/>
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 			    	<a className="nav-item-custom" href="/#/posts/create"> Create Post </a>
 			    	<a className="nav-item-custom" href="https://github.com/brm5050/CodersHaven"> About </a>

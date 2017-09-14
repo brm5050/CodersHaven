@@ -17,9 +17,9 @@ class CreateArticle extends React.Component {
 				body: "",
 			}
 		};
+
 		this.handleChange = this.handleChange.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
-
 	}
 
 	onSubmit(event) {
@@ -27,41 +27,44 @@ class CreateArticle extends React.Component {
 
 	    const newForm = this.state.form;
 
-			console.log(newForm);
+			console.log("newForm: ", newForm);
 			axios.post('/newpost', {newForm})
 		  .then(function (response) {
 		    console.log("response: ", response);
 		  })
 		  .catch(function (error) {
 		    console.log("error: ", error);
-		  });
-
-
+		  }).then(function() {
+				location.reload();
+			})
   	}
 
   	handleChange(event) {
   		const field = event.target.name;
   		const form  = this.state.form;
   		form[field] = event.target.value;
+
   		this.setState({form});
-			console.log(form);
+			// console.log(form);
   	}
 
 	render() {
 		return (
 			<div className=" container form-container">
-				<form onSubmit={this.onSubmit.bind(this)}>
-					<h1> Create your post </h1>
+				<form id="submitForm" onSubmit={this.onSubmit.bind(this)}>
+					<div className="header-container">
+						<h1 className="forum-header-lg"> Create your post </h1>
+					</div>
 					<div className="form-group form-group-custom ">
-						<label className="control-label"> Your name </label>
+						<p className="control-label text-center"> Your name </p>
 						<input type="text" value={this.state.author} onChange={this.handleChange} name="author" className="form-control"/>
 					</div>
 					<div className="form-group form-group-custom ">
-						<label className="control-label"> Post title </label>
+						<p className="control-label text-center"> Post title </p>
 						<input type="text" value={this.state.title} onChange={this.handleChange} name="title" className="form-control"/>
 					</div>
 					<div className="form-group form-group-custom ">
-						<label className="control-label"> Post body </label>
+						<p className="control-label text-center"> Post body </p>
 						<textarea type="text" value={this.state.body} onChange={this.handleChange} name="body" className="form-control" rows="3"/>
 					</div>
 					<div className="form-group">

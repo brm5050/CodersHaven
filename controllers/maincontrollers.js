@@ -10,21 +10,22 @@ mongoose.Promise = global.Promise;
 module.exports = function(app) {
 
 	app.post('/newpost', function(req,res) {
-		console.log("req.body: ", req.body);
+    // console.log("req.body: ", req.body);
 		var userData = req.body.newForm;
 
-		console.log("userData: ", userData);
-		var newPost = new Posts();
+    // console.log("userData: ", userData);
+		var newPost = new Posts(userData);
 
 		Object.assign(newPost, userData);
-		console.log("newPost: ", newPost);
-		newPost.save(function(err) {
+    // console.log("newPost: ", newPost);
+
+		newPost.save(function(err, record) {
 			if(err){
 				throw err;
-			} else {
+			}
 				console.log("saved to the db");
-			};
-		res.send("data recieved");
+				console.log("record: ", record);
+		    res.send("data recieved");
 		});
 	});
 

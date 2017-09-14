@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var postSchema = new Schema({
-	author: { type: String, required: true, unique: true},
+	author: { type: String, required: true, unique: false},
 	title: { type: String, required: true, unique: true },
 	body: String,
 	upvotes: { type: Number, default: 0 },

@@ -30,20 +30,32 @@ class Posts extends React.Component {
 
 	render() {
 		let articles = this.state.articles
+
+
+		const spanStyle = {
+			color: "#00BCD4",
+			marginRight: "4px"
+		};
+
 		console.log("Here are the articles nerd " , articles);
 		return (
-			<div className="container forum-container">
+			<div className="container">
 				<div className="container">
-					<h1 className="text-center"> All Posts </h1>
+					<p className="article-header article-header-lg"> All Posts </p>
 				</div>
-				<h2 className="text-center"> All posts, organized by most recent.</h2>
+				<h2 className="article-header article-header-sm"> All posts, organized by most recent.</h2>
 				<div>
 					{articles.map(articles =>
-						<div id="articleSection" key={articles.id}>
-							<h3 className="text-center" > {articles.author} </h3>
-							<h2 className="text-center">  {articles.title} </h2>
-							<p className="text-center"> {articles.body} </p>
-							<div className="comments">{"the comments should go here"}</div>
+						<div id="articleSection" className="article-container" key={articles.id}>
+							<div className="article-header-container">
+								<p className="article-static article-title-static"> Title: </p>
+								<p className="article-dynamic article-title-dynamic"> {articles.title} </p>
+							</div>
+							<p className="article-author"> <span style={spanStyle}> Author: </span> {articles.author} </p>
+							<p className="article-date"> <span style={spanStyle}> Date posted: </span> {articles.date} </p>
+							<div className="article-body-container well">
+								<p className="article-dynamic article-body"> {articles.body} </p>
+							</div>
 						</div>
 					)}
 				</div>
