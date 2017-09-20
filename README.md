@@ -11,7 +11,4 @@ comments in the future!
 
 # Click home and you post will be displayed
 <img width="1274" alt="post" src="https://user-images.githubusercontent.com/24966013/30656313-aeaef240-9e01-11e7-9d87-db9a5ae4d959.png">
-
-
-
-
+s
